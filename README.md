@@ -9,3 +9,12 @@ by [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 ```
 > meteor create notemanager
 ```
+
+
+
+&nbsp;
+## 01 notes list
+
+```
+> meteor add twbs:bootstrap
+```
