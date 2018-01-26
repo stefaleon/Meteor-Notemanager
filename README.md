@@ -44,3 +44,5 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ## 05 delete notes
 
 * Add remove links and add the logic for the delete event.
+
+br 5
