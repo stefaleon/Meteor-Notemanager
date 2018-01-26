@@ -18,3 +18,13 @@ by [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 ```
 > meteor add twbs:bootstrap
 ```
+
+&nbsp;
+## 02 notes collection
+
+```
+> meteor mongo
+```
+```
+db.notes.insert({ text: "Created Database.", createdAt: new Date() });
+```
