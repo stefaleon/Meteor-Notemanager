@@ -4,14 +4,29 @@ import { Notes } from '../lib/collections';
 import './main.html';
 
 Template.body.helpers({
-  /*
-  notes: [
-    { text: 'My Note 1'},
-    { text: 'My Note 2'},
-    { text: 'My Note 3'}
-  ]
-  */
   notes() {
-    return Notes.find({});
+    return Notes.find({}, {sort: {createdAt: -1}});
+  }
+});
+
+Template.themodal.events({
+  'submit .addnoteform': function() {
+    event.preventDefault();
+    console.log('clicked submit!');
+    // get the note's text
+    const newtext = event.target.notetext.value;
+    console.log(newtext);
+    // save to db
+    Notes.insert({
+      text: newtext,
+      createdAt: new Date()
+    });
+    // clear form
+    event.target.notetext.value = '';
+    // close modal
+    $(function () {
+      $('.modal').modal('hide');
+    });
+    return false;
   }
 });

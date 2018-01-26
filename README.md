@@ -33,3 +33,8 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ## 03 Navbar & Modal
 
 * Bootstrap 3
+
+&nbsp;
+## 04 add notes
+
+* Customize the modal and add the logic for the submit event.
