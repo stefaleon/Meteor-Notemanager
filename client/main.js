@@ -30,3 +30,13 @@ Template.themodal.events({
     return false;
   }
 });
+
+
+Template.note.events({
+  'click .deletenote': function() {
+    console.log('clicked delete!');
+    // remove from db
+    Notes.remove(this._id);
+    return false;
+  }
+});
