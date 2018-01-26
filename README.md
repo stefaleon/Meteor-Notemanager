@@ -38,3 +38,5 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ## 04 add notes
 
 * Customize the modal and add the logic for the submit event.
+
+br 4
