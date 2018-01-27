@@ -1,16 +1,1 @@
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-
-a {
-  text-decoration: none !important;
-  cursor: pointer;
-  font-size: 1.5em;
-  color: red;
-}
-
-#createddate {
-  font-size: .7em;
-}
+/* CSS declarations go here */

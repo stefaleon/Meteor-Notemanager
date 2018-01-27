@@ -3,65 +3,17 @@
 </head>
 
 <body>
-
   <div class="container">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-              Notes
-            </a>
-          </div>
-          <button type="button" class="btn btn-primary navbar-btn"
-                  data-toggle="modal" data-target="#myModal">
-            Add Note
-          </button>
-        </div>
-    </nav>
-    <h3>Latest Notes</h3>
+    <h1>Latest Notes</h1>
     <ul class="list-group">
       {{#each notes}}
           {{> note}}
       {{/each}}
     </ul>
   </div>
-
-  {{> themodal}}
 </body>
 
 
 <template name="note">
-  <li class="list-group-item">
-    <!--  display the *text* field of the db objects -->
-    {{text}}
-    <!--  remove icon -->
-    <a class="deletenote pull-right glyphicon glyphicon-remove" aria-hidden="true"></a>
-    <!--  and the date -->
-    <p id="createddate">{{createdAt}}</p>
-  </li>
-</template>
-
-<template name="themodal">
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <form class='addnoteform'>
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">New Note</h4>
-          </div>
-          <div class="modal-body">
-              <div class="form-group">
-                <input type="text" class="form-control"
-                       id="notetext" placeholder="Note Text ...">
-              </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Add Note</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+  <li class="list-group-item">{{text}}</li>
 </template>

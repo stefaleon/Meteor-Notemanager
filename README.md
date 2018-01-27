@@ -29,18 +29,4 @@ by [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ```
 
-&nbsp;
-## 03 Navbar & Modal
-
-* Bootstrap 3
-
-&nbsp;
-## 04 add notes
-
-* Customize the modal and add the logic for the submit event.
-
-
-&nbsp;
-## 05 delete notes
-
-* Add remove links and add the logic for the delete event.
+b 03
