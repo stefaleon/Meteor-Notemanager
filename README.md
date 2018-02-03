@@ -54,3 +54,9 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ```
 
 * Add a span on the Navbar
+
+
+&nbsp;
+## 07 login with username
+
+* Configure accounts for signing in with username. 
