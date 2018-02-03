@@ -65,3 +65,9 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ## 08 login to manage
 
 * Add conditionals that restrict note viewing and editing to logged users only.
+
+
+&nbsp;
+## 09 relate notes to users
+
+* Add owners to notes and display the owner in the note.

@@ -17,7 +17,7 @@
                     data-toggle="modal" data-target="#myModal">
               Add Note
             </button>
-          {{/if}}  
+          {{/if}}
           <span class="">
             {{> loginButtons}}
           </span>
@@ -42,7 +42,9 @@
 <template name="note">
   <li class="list-group-item">
     <!--  display the *text* field of the db objects -->
-    {{text}}
+    <p>{{text}}</p>
+    <!--  display the note owner  -->
+    <i>Added by  {{username}}</i>
     <!--  remove icon -->
     <a class="deletenote pull-right glyphicon glyphicon-remove" aria-hidden="true"></a>
     <!--  and the date -->

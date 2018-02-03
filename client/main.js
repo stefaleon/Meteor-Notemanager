@@ -30,7 +30,9 @@ Template.themodal.events({
     // save to db
     Notes.insert({
       text: newtext,
-      createdAt: new Date()
+      createdAt: new Date(),
+      owner: Meteor.userId(),
+      username: Meteor.user().username
     });
     // clear form
     event.target.notetext.value = '';
