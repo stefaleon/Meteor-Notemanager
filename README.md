@@ -44,3 +44,13 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ## 05 delete notes
 
 * Add remove links and add the logic for the delete event.
+
+
+&nbsp;
+## 06 accounts
+
+```
+> meteor add accounts-ui accounts-password
+```
+
+* Add a span on the Navbar

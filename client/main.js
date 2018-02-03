@@ -10,7 +10,11 @@ Template.body.helpers({
 });
 
 Template.themodal.events({
-  'submit .addnoteform': function() {
+  // 'shown': function () {
+  //   $('#notetext').focus();
+  //   return false;
+  // }​,
+  'submit .addnoteform': function(event) {
     event.preventDefault();
     console.log('clicked submit!');
     // get the note's text
