@@ -71,3 +71,5 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ## 09 relate notes to users
 
 * Add owners to notes and display the owner in the note.
+
+br09
