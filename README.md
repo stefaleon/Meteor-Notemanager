@@ -59,4 +59,6 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 &nbsp;
 ## 07 login with username
 
-* Configure accounts for signing in with username. 
+* Configure accounts for signing in with username.
+
+br07
