@@ -71,3 +71,15 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 ## 09 relate notes to users
 
 * Add owners to notes and display the owner in the note.
+
+
+&nbsp;
+## 10 secure methods
+
+```
+> meteor remove insecure
+```
+
+* Move the methods for inserting and removing notes from *main.js* to *collections.js*.
+* Add checks.
+* Call the secure methods in *main.js*.

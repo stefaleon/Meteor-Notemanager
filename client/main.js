@@ -28,12 +28,7 @@ Template.themodal.events({
     const newtext = event.target.notetext.value;
     console.log(newtext);
     // save to db
-    Notes.insert({
-      text: newtext,
-      createdAt: new Date(),
-      owner: Meteor.userId(),
-      username: Meteor.user().username
-    });
+    Meteor.call('notes.insert', newtext);
     // clear form
     event.target.notetext.value = '';
     // close modal
@@ -49,7 +44,7 @@ Template.note.events({
   'click .deletenote': function() {
     console.log('clicked delete!');
     // remove from db
-    Notes.remove(this._id);
+    Meteor.call('notes.remove', this)
     return false;
   }
 });
