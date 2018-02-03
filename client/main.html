@@ -12,21 +12,27 @@
               Notes
             </a>
           </div>
-          <button type="button" class="btn btn-primary navbar-btn"
-                  data-toggle="modal" data-target="#myModal">
-            Add Note
-          </button>
+          {{# if currentUser}}
+            <button type="button" class="btn btn-primary navbar-btn"
+                    data-toggle="modal" data-target="#myModal">
+              Add Note
+            </button>
+          {{/if}}  
           <span class="">
             {{> loginButtons}}
           </span>
         </div>
     </nav>
     <h3>Latest Notes</h3>
-    <ul class="list-group">
-      {{#each notes}}
-          {{> note}}
-      {{/each}}
-    </ul>
+    {{# if currentUser}}
+      <ul class="list-group">
+        {{#each notes}}
+            {{> note}}
+        {{/each}}
+      </ul>
+    {{else}}
+      <p> You must be signed-in to manage notes. </p>
+    {{/if}}
   </div>
 
   {{> themodal}}

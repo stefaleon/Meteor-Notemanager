@@ -59,4 +59,9 @@ db.notes.insert({ text: "Created Database.", createdAt: new Date() });
 &nbsp;
 ## 07 login with username
 
-* Configure accounts for signing in with username. 
+* Configure accounts for signing in with username.
+
+&nbsp;
+## 08 login to manage
+
+* Add conditionals that restrict note viewing and editing to logged users only.
